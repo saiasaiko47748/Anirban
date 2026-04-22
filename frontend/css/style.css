@@ -987,3 +987,12 @@ ul { list-style: none; }
   .menu-item { flex-direction: column; }
   .mi-price { align-self: flex-start; }
 }
+@media (max-width: 600px) {
+  .logo-img {
+    height: 50px; /* Smaller logo for mobile */
+  }
+  .nav-cta {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+}
