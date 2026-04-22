@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catering – Anirban's Biriyani & Caterers</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900&family=Cormorant+Garamond:ital,wght@0,300;0,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .catering-section { padding: 8rem 0 6rem; }
+    .catering-hero-text { text-align: center; max-width: 700px; margin: 0 auto 5rem; }
+    .catering-hero-text h1 { font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; color: var(--text-light); margin-bottom: 1rem; line-height: 1.1; }
+    .catering-hero-text h1 em { color: var(--gold-light); font-style: italic; }
+    .catering-hero-text p { font-family: var(--font-elegant); font-size: 1.2rem; color: var(--text-muted); line-height: 1.8; }
+    .packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 5rem; }
+    .pkg-card { background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: var(--radius); padding: 2.5rem 2rem; transition: all var(--transition); }
+    .pkg-card:hover, .pkg-card.featured-pkg { border-color: var(--gold); box-shadow: 0 8px 32px rgba(201,146,42,0.12); }
+    .pkg-card.featured-pkg { transform: translateY(-8px); background: linear-gradient(160deg, var(--dark-card) 0%, rgba(201,146,42,0.05) 100%); }
+    .pkg-icon { width: 60px; height: 60px; border-radius: 50%; background: rgba(201,146,42,0.1); display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1.5rem; margin-bottom: 1.5rem; }
+    .pkg-card h3 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--text-light); margin-bottom: 0.5rem; }
+    .pkg-range { font-size: 0.85rem; color: var(--gold); font-weight: 600; margin-bottom: 1rem; letter-spacing: 0.04em; }
+    .pkg-card p { font-family: var(--font-elegant); font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem; }
+    .pkg-features { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 2rem; }
+    .pkg-features li { font-size: 0.88rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.6rem; }
+    .pkg-features li i { color: var(--gold); font-size: 0.75rem; }
+    .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 4rem; }
+    .why-card { display: flex; gap: 1.2rem; align-items: flex-start; padding: 1.5rem; background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: var(--radius); }
+    .why-icon { width: 48px; height: 48px; border-radius: 50%; background: rgba(201,146,42,0.1); display: flex; align-items: center; justify-content: center; color: var(--gold); flex-shrink: 0; }
+    .why-text h4 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--text-light); margin-bottom: 0.3rem; }
+    .why-text p { font-family: var(--font-elegant); font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; }
+    .catering-cta { text-align: center; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: var(--radius); padding: 4rem; }
+    .catering-cta h2 { font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--text-light); margin-bottom: 1rem; }
+    .catering-cta p { font-family: var(--font-elegant); font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem; }
+    .catering-cta-btns { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    @media (max-width: 900px) { .packages-grid { grid-template-columns: 1fr; } .pkg-card.featured-pkg { transform: none; } }
+    @media (max-width: 600px) { .why-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Anirban's" class="logo-img"></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="catering.html" class="active">Catering</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reserve.html" class="nav-cta">Reserve a Table</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="catering-section">
+    <div class="container">
+      <div class="section-header"><span class="section-label">Catering</span></div>
+      <div class="catering-hero-text">
+        <h1>From Intimate Gatherings<br>to <em>Grand Celebrations.</em></h1>
+        <p>Anirban's Biriyani & Caterers brings the same dum-cooked perfection to your door — whether you're hosting 10 guests or 10,000.</p>
+      </div>
+
+      <div class="packages-grid">
+        <div class="pkg-card reveal">
+          <div class="pkg-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>Intimate Package</h3>
+          <div class="pkg-range">10 – 100 Guests</div>
+          <p>Perfect for birthdays, anniversaries, puja celebrations, and small corporate events.</p>
+          <ul class="pkg-features">
+            <li><i class="fa-solid fa-check"></i> Full biryani menu selection</li>
+            <li><i class="fa-solid fa-check"></i> Starters & sweets included</li>
+            <li><i class="fa-solid fa-check"></i> Serving staff provided</li>
+            <li><i class="fa-solid fa-check"></i> Disposable or crockery setup</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Get a Quote</a>
+        </div>
+        <div class="pkg-card featured-pkg reveal">
+          <div class="pkg-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+          <h3>Wedding Package</h3>
+          <div class="pkg-range">100 – 500 Guests</div>
+          <p>Make your special day unforgettable with a full-service catering experience, curated just for you.</p>
+          <ul class="pkg-features">
+            <li><i class="fa-solid fa-check"></i> Custom multi-course menu</li>
+            <li><i class="fa-solid fa-check"></i> Live cooking stations</li>
+            <li><i class="fa-solid fa-check"></i> Full setup & decoration</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated event manager</li>
+            <li><i class="fa-solid fa-check"></i> Cleanup included</li>
+          </ul>
+          <a href="contact.html" class="btn btn-gold" style="width:100%; justify-content:center;">Get a Quote</a>
+        </div>
+        <div class="pkg-card reveal">
+          <div class="pkg-icon"><i class="fa-solid fa-building"></i></div>
+          <h3>Corporate & Large Events</h3>
+          <div class="pkg-range">500 – 10,000+ Guests</div>
+          <p>Large-scale corporate lunches, festivals, community feasts, and pujas handled with precision.</p>
+          <ul class="pkg-features">
+            <li><i class="fa-solid fa-check"></i> Bulk cooking infrastructure</li>
+            <li><i class="fa-solid fa-check"></i> Multiple food stations</li>
+            <li><i class="fa-solid fa-check"></i> Logistics & transport</li>
+            <li><i class="fa-solid fa-check"></i> Flexible menu & pricing</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Get a Quote</a>
+        </div>
+      </div>
+
+      <div class="section-header"><h2>Why Choose Anirban's Catering?</h2></div>
+      <div class="why-grid">
+        <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-fire-flame-curved"></i></div><div class="why-text"><h4>Authentic Dum Cooking</h4><p>Every pot is sealed and slow-cooked the traditional way. No shortcuts, no compromises.</p></div></div>
+        <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-truck-fast"></i></div><div class="why-text"><h4>Punctual Delivery</h4><p>We understand the importance of timing at events. We're always on time, every time.</p></div></div>
+        <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-star"></i></div><div class="why-text"><h4>Trusted by Thousands</h4><p>Over 500 Google reviews and years of loyal customers across North Kolkata.</p></div></div>
+        <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-sliders"></i></div><div class="why-text"><h4>Fully Customisable</h4><p>Build your menu from scratch. Mix and match biriyani, starters, mains and desserts.</p></div></div>
+      </div>
+
+      <div class="catering-cta reveal">
+        <h2>Ready to Plan Your Event?</h2>
+        <p>Contact us today for a free consultation and personalised quote.</p>
+        <div class="catering-cta-btns">
+          <a href="contact.html" class="btn btn-gold">Send an Enquiry</a>
+          <a href="tel:+918401706013" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a href="index.html"><img src="images/logo.png" alt="Anirban's" class="footer-logo"></a><p class="footer-tagline"><em>Crafted with spice. Served with soul.</em></p><div class="footer-socials"><a href="https://instagram.com/anirbansbiryani" target="_blank"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-google"></i></a></div></div>
+      <div class="footer-col"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="locations.html">Locations</a></li></ul></div>
+      <div class="footer-col"><h4>Order Online</h4><ul><li><a href="#">Zomato</a></li><li><a href="#">Swiggy</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul class="contact-list"><li><i class="fa-solid fa-phone"></i><a href="tel:+918401706013">+91 84017 06013</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Anirban's Biriyani & Caterers. All rights reserved.</p></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

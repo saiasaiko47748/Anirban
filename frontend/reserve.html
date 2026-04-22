@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserve a Table – Anirban's Biriyani & Caterers</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900&family=Cormorant+Garamond:ital,wght@0,300;0,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .reserve-section { padding: 5rem 0 6rem; }
+    .reserve-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .reserve-info h2 { font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--text-light); margin-bottom: 1rem; }
+    .reserve-info p { font-family: var(--font-elegant); font-size: 1.1rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem; }
+    .ri-list { display: flex; flex-direction: column; gap: 1rem; }
+    .ri-item { display: flex; align-items: center; gap: 1rem; font-size: 0.95rem; color: var(--text-muted); }
+    .ri-item i { color: var(--gold); width: 20px; text-align: center; }
+    .form-card { background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: var(--radius); padding: 2.5rem; }
+    .form-group { margin-bottom: 1.5rem; }
+    .form-group label { display: block; font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.6rem; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; background: var(--dark-surface); border: 1px solid var(--dark-border);
+      border-radius: var(--radius-sm); padding: 0.85rem 1rem; color: var(--text-light);
+      font-family: var(--font-sans); font-size: 0.95rem; transition: border-color var(--transition);
+      outline: none;
+    }
+    .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-dim); }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); }
+    .form-group select { appearance: none; cursor: pointer; }
+    .form-group select option { background: var(--dark-surface); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-submit { width: 100%; padding: 1rem; font-size: 1rem; }
+    .form-success { display: none; text-align: center; padding: 2rem; }
+    .form-success i { font-size: 3rem; color: var(--gold); margin-bottom: 1rem; }
+    .form-success h3 { font-family: var(--font-display); font-size: 1.5rem; color: var(--text-light); margin-bottom: 0.5rem; }
+    .form-success p { color: var(--text-muted); font-family: var(--font-elegant); }
+    @media (max-width: 768px) {
+      .reserve-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Anirban's" class="logo-img"></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reserve.html" class="nav-cta active">Reserve a Table</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="reserve-section" style="padding-top: 8rem;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 3rem;">
+        <span class="section-label">Reservations</span>
+        <h1 style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight:700; color: var(--text-light);">Reserve Your Table</h1>
+        <p style="font-family: var(--font-elegant); color: var(--text-muted); font-size: 1.1rem;">Guarantee your spot for an unforgettable biryani experience.</p>
+      </div>
+      <div class="reserve-grid">
+        <div class="reserve-info">
+          <h2>Plan Your Visit</h2>
+          <p>Whether it's a family dinner, a birthday celebration, or a casual lunch with friends — we'd love to have you. Reservations are recommended especially on weekends.</p>
+          <div class="ri-list">
+            <div class="ri-item"><i class="fa-regular fa-clock"></i> Lunch: 12:00 PM – 3:30 PM</div>
+            <div class="ri-item"><i class="fa-regular fa-clock"></i> Dinner: 7:00 PM – 10:30 PM</div>
+            <div class="ri-item"><i class="fa-solid fa-location-dot"></i> Sodepur · Madhyamgram · Doltola</div>
+            <div class="ri-item"><i class="fa-solid fa-users"></i> Groups of any size welcome</div>
+            <div class="ri-item"><i class="fa-solid fa-champagne-glasses"></i> Private dining available for events</div>
+            <div class="ri-item"><i class="fa-solid fa-phone"></i> Call us: <a href="tel:+918401706013" style="color: var(--gold); margin-left: 4px;">+91 84017 06013</a></div>
+          </div>
+        </div>
+        <div class="form-card">
+          <form id="reserveForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Rahul" required>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Sharma" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" required>
+                  <option value="">Select</option>
+                  <option>1-2 Guests</option>
+                  <option>3-4 Guests</option>
+                  <option>5-6 Guests</option>
+                  <option>7-10 Guests</option>
+                  <option>10+ Guests</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="location">Location</label>
+                <select id="location" name="location" required>
+                  <option value="">Select Branch</option>
+                  <option>Sodepur</option>
+                  <option>Madhyamgram</option>
+                  <option>Doltola</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="notes">Special Requests</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Allergies, occasion, seating preference..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold form-submit">Confirm Reservation <i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>Reservation Received!</h3>
+            <p>We'll confirm your booking via phone or email shortly. See you soon!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="images/logo.png" alt="Anirban's" class="footer-logo"></a>
+        <p class="footer-tagline"><em>Crafted with spice. Served with soul.</em></p>
+        <div class="footer-socials">
+          <a href="https://instagram.com/anirbansbiryani" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="locations.html">Locations</a></li></ul></div>
+      <div class="footer-col"><h4>Order Online</h4><ul><li><a href="#">Zomato</a></li><li><a href="#">Swiggy</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul class="contact-list"><li><i class="fa-solid fa-phone"></i><a href="tel:+918401706013">+91 84017 06013</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Anirban's Biriyani & Caterers. All rights reserved.</p></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Set min date to today
+    const dateInput = document.getElementById('date');
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.setAttribute('min', today);
+    }
+    // Form submission
+    document.getElementById('reserveForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      // Simulate API call
+      await new Promise(r => setTimeout(r, 1200));
+      this.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

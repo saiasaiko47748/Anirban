@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu – Anirban's Biriyani & Caterers</title>
+  <meta name="description" content="Full menu of Anirban's Biriyani & Caterers – Biriyani, Kebabs, Chaap, Fish Fry, Desserts & more.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="menu-page">
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Anirban's Biriyani & Caterers" class="logo-img">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reserve.html" class="nav-cta">Reserve a Table</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MENU HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://b.zmtcdn.com/data/reviews_photos/5b2/6badfe5538d180b11cfcb8dfc01135b2_1749414785.jpg')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="section-label">Our Menu</span>
+      <h1>Every Bite. A Memory.</h1>
+      <p>Made to order. Generous portions. Unmatched value.</p>
+    </div>
+  </section>
+
+  <!-- MENU TABS -->
+  <section class="menu-section">
+    <div class="container">
+      <div class="menu-tabs" id="menuTabs">
+        <button class="tab-btn active" data-tab="biryani">🍛 Biriyani</button>
+        <button class="tab-btn" data-tab="starters">🔥 Starters</button>
+        <button class="tab-btn" data-tab="mains">🍖 Mains</button>
+        <button class="tab-btn" data-tab="seafood">🐟 Seafood</button>
+        <button class="tab-btn" data-tab="kebabs">🍢 Kebabs &amp; Chaap</button>
+        <button class="tab-btn" data-tab="desserts">🍮 Desserts</button>
+        <button class="tab-btn" data-tab="beverages">🥤 Beverages</button>
+      </div>
+
+      <!-- BIRYANI -->
+      <div class="menu-tab-content active" id="tab-biryani">
+        <div class="menu-category-header">
+          <h2>Biriyani</h2>
+          <p>Our crown jewel. Slow-cooked dum biryani with fragrant Basmati, whole spices, and generous meat.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item bestseller">
+            <div class="mi-info">
+              <div class="mi-header">
+                <h3>Special Mutton Biriyani</h3>
+                <span class="mi-badge">Bestseller</span>
+              </div>
+              <p>Large mutton piece, long-grain Basmati rice, dum-cooked with aromatic whole spices. Served with raita.</p>
+              <span class="mi-note">Incl. GST</span>
+            </div>
+            <span class="mi-price">₹350</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Mutton Biriyani (Regular)</h3>
+              <p>Classic dum biryani with tender mutton, perfectly balanced spice, unlimited rice.</p>
+            </div>
+            <span class="mi-price">₹280</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Special Chicken Biriyani</h3>
+              <p>Juicy chicken pieces, aromatic Basmati, slow-cooked to absorb every flavour.</p>
+            </div>
+            <span class="mi-price">₹220</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Chicken Biriyani (Regular)</h3>
+              <p>Classic chicken dum biryani with unlimited rice option.</p>
+            </div>
+            <span class="mi-price">₹180</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Egg Biriyani</h3>
+              <p>Fragrant Basmati with perfectly boiled eggs and dum spices.</p>
+            </div>
+            <span class="mi-price">₹120</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Veg Biriyani</h3>
+              <p>Aromatic rice with seasonal vegetables and traditional Kolkata biryani spices.</p>
+            </div>
+            <span class="mi-price">₹100</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STARTERS -->
+      <div class="menu-tab-content" id="tab-starters">
+        <div class="menu-category-header">
+          <h2>Starters</h2>
+          <p>Set the tone with bold flavours before your main course.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Fish Fry</h3>
+              <p>Crispy golden coating, melt-in-the-mouth fish inside. A quiet legend on every table.</p>
+            </div>
+            <span class="mi-price">₹28</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Chicken Cutlet</h3>
+              <p>Seasoned minced chicken cutlet, pan-fried to golden perfection.</p>
+            </div>
+            <span class="mi-price">₹60</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Egg Chop</h3>
+              <p>Kolkata-style boiled egg chop – crunchy, spiced and deeply satisfying.</p>
+            </div>
+            <span class="mi-price">₹35</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Chicken Tikka</h3>
+              <p>Marinated chicken tikka, grilled in tandoor with yoghurt and spice rub.</p>
+            </div>
+            <span class="mi-price">₹180</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Mutton Seekh Kebab</h3>
+              <p>Minced mutton seekh skewered and grilled with aromatic spices.</p>
+            </div>
+            <span class="mi-price">₹160</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Prawn Fry</h3>
+              <p>Crispy fried prawns with a light spiced batter. A Bengali classic.</p>
+            </div>
+            <span class="mi-price">₹120</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAINS -->
+      <div class="menu-tab-content" id="tab-mains">
+        <div class="menu-category-header">
+          <h2>Main Course</h2>
+          <p>Rich curries and slow-cooked kosha dishes – made to pair with biryani or roti.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="mi-info">
+              <div class="mi-header">
+                <h3>Mutton Kosha (Kosa)</h3>
+                <span class="mi-badge">Must Try</span>
+              </div>
+              <p>Slow-cooked dry mutton curry with onion, ginger-garlic paste and whole spices. Deeply flavourful.</p>
+            </div>
+            <span class="mi-price">₹250</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Chicken Kosha</h3>
+              <p>Rich, dry-style chicken curry cooked on low flame with robust masala.</p>
+            </div>
+            <span class="mi-price">₹180</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Mutton Curry</h3>
+              <p>Traditional Bengali-style mutton curry with potato, aromatic and comforting.</p>
+            </div>
+            <span class="mi-price">₹220</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Chicken Curry</h3>
+              <p>Home-style chicken curry with potatoes and warming spices.</p>
+            </div>
+            <span class="mi-price">₹160</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Egg Curry</h3>
+              <p>Boiled eggs in a rich onion-tomato gravy. Perfect with rice.</p>
+            </div>
+            <span class="mi-price">₹80</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Dal Fry</h3>
+              <p>Tempered yellow dal with ghee, cumin and dried chilli.</p>
+            </div>
+            <span class="mi-price">₹60</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Paneer Butter Masala</h3>
+              <p>Cottage cheese cubes in a rich, creamy tomato-based gravy.</p>
+            </div>
+            <span class="mi-price">₹160</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Roti / Paratha</h3>
+              <p>Freshly made whole wheat roti or layered paratha.</p>
+            </div>
+            <span class="mi-price">₹15 / ₹25</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEAFOOD -->
+      <div class="menu-tab-content" id="tab-seafood">
+        <div class="menu-category-header">
+          <h2>Seafood</h2>
+          <p>Fresh catch, Bengali style.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Fish Fry (Bhetki)</h3>
+              <p>Crispy golden Bhetki fillet, Bengal's most beloved fried fish.</p>
+            </div>
+            <span class="mi-price">₹28</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Fish Curry</h3>
+              <p>Traditional Bengali fish curry with mustard gravy and turmeric.</p>
+            </div>
+            <span class="mi-price">₹120</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Prawn Curry</h3>
+              <p>Juicy prawns in a rich golden onion-tomato gravy.</p>
+            </div>
+            <span class="mi-price">₹180</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Prawn Biriyani</h3>
+              <p>Fragrant dum biryani with juicy tiger prawns and aromatic spices.</p>
+            </div>
+            <span class="mi-price">₹280</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- KEBABS & CHAAP -->
+      <div class="menu-tab-content" id="tab-kebabs">
+        <div class="menu-category-header">
+          <h2>Kebabs &amp; Chaap</h2>
+          <p>The starters that set the tone — bold, tender, smoky.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item bestseller">
+            <div class="mi-info">
+              <div class="mi-header">
+                <h3>Malai Chicken Kebab</h3>
+                <span class="mi-badge">Fan Favourite</span>
+              </div>
+              <p>Unbelievably soft and creamy malai-marinated chicken skewers, slow-grilled.</p>
+            </div>
+            <span class="mi-price">₹200</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Reshmi Kebab</h3>
+              <p>Silky smooth chicken kebabs with cream and saffron marinade.</p>
+            </div>
+            <span class="mi-price">₹180</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Chicken Tikka Kebab</h3>
+              <p>Perfectly grilled with yoghurt marinade and that signature smoky char.</p>
+            </div>
+            <span class="mi-price">₹180</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Mutton Boti Kebab</h3>
+              <p>Tender mutton cubes marinated overnight, grilled on skewers.</p>
+            </div>
+            <span class="mi-price">₹220</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Chicken Chaap</h3>
+              <p>Slow-cooked in a rich poppy seed and cashew gravy. A Mughal-era classic.</p>
+            </div>
+            <span class="mi-price">₹180</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Mutton Chaap</h3>
+              <p>Rich, melt-in-mouth mutton chaap slow-cooked in aromatic brown gravy.</p>
+            </div>
+            <span class="mi-price">₹240</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Tandoori Chicken (Half)</h3>
+              <p>Classic tandoori chicken with charred edges and juicy interior.</p>
+            </div>
+            <span class="mi-price">₹200</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESSERTS -->
+      <div class="menu-tab-content" id="tab-desserts">
+        <div class="menu-category-header">
+          <h2>Desserts</h2>
+          <p>The sweet finale your meal deserves.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item bestseller">
+            <div class="mi-info">
+              <div class="mi-header">
+                <h3>Phirni / Firni</h3>
+                <span class="mi-badge">Must Have</span>
+              </div>
+              <p>Creamy, smooth rice pudding set in earthen bowls. Perfectly sweetened, chilled to perfection.</p>
+            </div>
+            <span class="mi-price">₹60</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Mishti Doi</h3>
+              <p>Classic Bengali sweet yoghurt – the perfect palate cleanser.</p>
+            </div>
+            <span class="mi-price">₹40</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Gulab Jamun</h3>
+              <p>Soft khoya dumplings soaked in rose-scented sugar syrup.</p>
+            </div>
+            <span class="mi-price">₹50</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Rasmalai</h3>
+              <p>Soft cottage cheese patties in saffron-infused chilled milk.</p>
+            </div>
+            <span class="mi-price">₹60</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BEVERAGES -->
+      <div class="menu-tab-content" id="tab-beverages">
+        <div class="menu-category-header">
+          <h2>Beverages</h2>
+          <p>Cool, refreshing, house-made finishes to your meal.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item bestseller">
+            <div class="mi-info">
+              <div class="mi-header">
+                <h3>Lime Soda</h3>
+                <span class="mi-badge">House Special</span>
+              </div>
+              <p>Fresh lime, chilled soda, hint of black salt. The ultimate palate refresher.</p>
+            </div>
+            <span class="mi-price">₹40</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Mocktails</h3>
+              <p>Rotating seasonal mocktails — ask your server for today's specials.</p>
+            </div>
+            <span class="mi-price">₹80</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Sweet Lassi</h3>
+              <p>Thick, chilled yoghurt lassi sweetened with sugar and rose water.</p>
+            </div>
+            <span class="mi-price">₹50</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Mango Lassi</h3>
+              <p>Seasonal Alphonso mango blended with creamy yoghurt.</p>
+            </div>
+            <span class="mi-price">₹70</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Masala Chai</h3>
+              <p>Spiced ginger tea brewed the traditional way.</p>
+            </div>
+            <span class="mi-price">₹20</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Cold Coffee</h3>
+              <p>Chilled blended coffee with milk and a hint of vanilla.</p>
+            </div>
+            <span class="mi-price">₹60</span>
+          </div>
+          <div class="menu-item">
+            <div class="mi-info">
+              <h3>Mineral Water</h3>
+              <p>Chilled bottled mineral water.</p>
+            </div>
+            <span class="mi-price">₹20</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-note">
+        <i class="fa-solid fa-circle-info"></i>
+        All prices are inclusive of GST. Menu items may vary by location. Please inform your server of any allergies.
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="images/logo.png" alt="Anirban's Biriyani" class="footer-logo"></a>
+        <p class="footer-tagline"><em>Crafted with spice. Served with soul.</em></p>
+        <div class="footer-socials">
+          <a href="https://instagram.com/anirbansbiryani" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="reserve.html">Reserve</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="locations.html">Sodepur</a></li>
+          <li><a href="locations.html">Madhyamgram</a></li>
+          <li><a href="locations.html">Doltola</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-phone"></i><a href="tel:+918401706013">+91 84017 06013</a></li>
+          <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@anirbansbiriyani.com">info@anirbansbiriyani.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Anirban's Biriyani &amp; Caterers. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
