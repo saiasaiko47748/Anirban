@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Serve frontend static files
-app.use(express.static(path.join(__dirname, '../frontend')));
+app.use(express.static(path.join(__dirname, 'frontend')));
 
 // ---- Simple file-based "database" (swap for MongoDB/MySQL in production) ----
 const DATA_DIR = path.join(__dirname, 'data');
